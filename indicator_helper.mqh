@@ -14,7 +14,7 @@ int lossWhenSell = 0;
 int NameNumber = 0;
 int openMinute, closeMinute;
 int totalSignals = 0;
-int is_there_an_order_open = 0;
+
 
 bool touched_rsi_lvl = false;
 bool isGreen = false;
@@ -26,19 +26,19 @@ color TrueColor;
 
 string typeAction;
 string pin_bar_decider;
+string signal_confirmation_check = "";
 
 datetime OpenTime;
 
 //+------------------------------------------------------------------+  
 void toggle_reset(){
-is_there_an_order_open = 0;
+order_open = "";
 typeAction = "";
 buffer_arrow_is_drawn = false;
 isGreen = false;
 isRed = false;
 pin_bar_decider = "";
+signal_confirmation_check = "";
+order_open = "order_is_NOT_open";
+Print("reseted");
 }
-//+------------------------------------------------------------------+  
-
-
-//+------------------------------------------------------------------+  
