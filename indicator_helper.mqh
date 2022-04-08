@@ -40,5 +40,5 @@ isRed = false;
 pin_bar_decider = "";
 signal_confirmation_check = "";
 order_open = "order_is_NOT_open";
-Print("reseted");
+//Print("reseted");
 }
