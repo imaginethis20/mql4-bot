@@ -4,8 +4,13 @@
 #include <my_custom_indicator_includes\main_indicator_include.mqh>
 #include <my_custom_indicator_includes\draw_objects_include.mqh>
 
+
+
 double StartPrice, OverPrice;
 double pair_winrate = 0;
+double current_funds = 1000;
+double earned =0;
+double lost =0;
 
 int winWhenBuy =0;
 int lossWhenBuy=0;
@@ -14,7 +19,8 @@ int lossWhenSell = 0;
 int NameNumber = 0;
 int openMinute, closeMinute;
 int totalSignals = 0;
-
+int bars_to_iterate = 30;
+int bet_size = 60;
 
 bool touched_rsi_lvl = false;
 bool isGreen = false;
@@ -40,5 +46,4 @@ isRed = false;
 pin_bar_decider = "";
 signal_confirmation_check = "";
 order_open = "order_is_NOT_open";
-//Print("reseted");
 }
